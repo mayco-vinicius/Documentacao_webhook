@@ -1,6 +1,6 @@
 # Servidor AWS - Gerenciamento de Screens e Webhooks
 Documentação do servidor da AWS para fazer o regenciamento dos programas existentes.
-Esta documentação foi revisada e atualizada em 01/11/2025.
+Esta documentação foi revisada e atualizada em 03/11/2025.
 
 ## 📄 Objetivo
 O servidor AWS hospeda os **webhooks** e **serviços de integração**. Cada processo é executado dentro de uma **screen** -- um ambiente virtual no terminal que permite rodar programas continuamente mesmo após encerrar a sessão SSH.
