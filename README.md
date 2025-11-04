@@ -152,3 +152,7 @@ Se aparecer `(Attached)` ao listar:
 ```
 screen -d <nome_da_screen>
 ```
+Depois reconecte com:
+```
+screen -r <nome_da_screen>
+```
