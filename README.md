@@ -9,7 +9,7 @@ Essa prática garente **estabilidade, persistência dos serviços e segurança e
 
 ## ⚙️ Estrutura do servidor
 - Diretório onde estão licalizados todos os scrips:
-```
+```bash
 /home/suporte
 ```
 Dentro desse diretório existe o arquivo `LEIAME-INICIAR-PROGRAMAS`, que contém intruções básicas para iniciar todos os programas.
