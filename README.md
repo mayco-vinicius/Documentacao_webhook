@@ -1,5 +1,6 @@
 # Servidor AWS - Gerenciamento de Screens e Webhooks
 Documentação do servidor da AWS para fazer o regenciamento dos programas existentes.
+
 Esta documentação foi revisada e atualizada em 05/11/2025.
 
 ## 📄 Objetivo
