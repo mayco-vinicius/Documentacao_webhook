@@ -1,6 +1,6 @@
 # Servidor AWS - Gerenciamento de Screens e Webhooks
 Documentação do servidor da AWS para fazer o regenciamento dos programas existentes.
-Esta documentação foi revisada e atualizada em 03/11/2025.
+Esta documentação foi revisada e atualizada em 05/11/2025.
 
 ## 📄 Objetivo
 O servidor AWS hospeda os **webhooks** e **serviços de integração**. Cada processo é executado dentro de uma **screen** -- um ambiente virtual no terminal que permite rodar programas continuamente mesmo após encerrar a sessão SSH.
@@ -23,7 +23,7 @@ screen -ls
 ### 🔍 Exemplo de saída esperada:
 ```
 There are screens on:
-        3392723.carterizacaobp  (11/03/25 15:09:29)     (Detached)
+        3392723.carterizacao_bp  (11/03/25 15:09:29)     (Detached)
         4083367.santander       (08/22/25 10:01:15)     (Detached)
         2868329.bling   (07/23/25 17:02:29)     (Detached)
         2181656.carterizacao    (06/13/25 10:29:08)     (Detached)
@@ -61,7 +61,7 @@ O **GNU Screen** é um gerenciador de sessões no terminal Linux que permite:
 | Encerrar uma screen (de dentro dela) | `exit`             |
 
 ## 💻 Inicialização de Webhooks e Serviços
-O passo a passo para inicializar as screen em produção (última atualização 03/11/2025):
+O passo a passo para inicializar as screen em produção (última atualização 05/11/2025):
 
 ### Webhook da abbiamo:
 ```
@@ -124,7 +124,7 @@ python3 servidor_webhook_santanderv2.py
 
 ### API de Carterização (BP)
 ```
-screen -S carterizacaobp
+screen -S carterizacao_bp
 cd /home/suporte/ez_chat/api/carterizacao_bp
 source venv/bin/activate
 python3 routes.py
