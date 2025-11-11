@@ -135,7 +135,7 @@ python3 routes.py
 ```
 screen -S xml_bling
 cd /home/suporte/bling/busca_xml_saida
-souce venv/bin/activate
+source venv/bin/activate
 python3 main.py
 ```
 
