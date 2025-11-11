@@ -1,7 +1,7 @@
 # Servidor AWS - Gerenciamento de Screens e Webhooks
 Documentação do servidor da AWS para fazer o regenciamento dos programas existentes.
 
-Esta documentação foi revisada e atualizada em 05/11/2025.
+Esta documentação foi revisada e atualizada em 11/11/2025.
 
 ## 📄 Objetivo
 O servidor AWS hospeda os **webhooks** e **serviços de integração**. Cada processo é executado dentro de uma **screen** -- um ambiente virtual no terminal que permite rodar programas continuamente mesmo após encerrar a sessão SSH.
@@ -62,7 +62,7 @@ O **GNU Screen** é um gerenciador de sessões no terminal Linux que permite:
 | Encerrar uma screen (de dentro dela) | `exit`             |
 
 ## 💻 Inicialização de Webhooks e Serviços
-O passo a passo para inicializar as screen em produção (última atualização 05/11/2025):
+O passo a passo para inicializar as screen em produção (última atualização 11/11/2025):
 
 ### Webhook da abbiamo:
 ```
@@ -129,6 +129,14 @@ screen -S carterizacao_bp
 cd /home/suporte/ez_chat/api/carterizacao_bp
 source venv/bin/activate
 python3 routes.py
+```
+
+### Busca xml da bling:
+```
+screen -S xml_bling
+cd /home/suporte/bling/busca_xml_saida
+souce venv/bin/activate
+python3 main.py
 ```
 
 ## ⚙️ Gerenciamento das Screens
